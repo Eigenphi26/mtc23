@@ -1,0 +1,344 @@
+p {
+	text-align: center;
+	color: rgb(250, 250, 242);
+	font-size: 20px;
+  font-weight: bolder;
+}
+.social-media-icons ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.social-media-icons a { 
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px;
+}
+
+.social-media-icons a:nth-child(1) i {
+  color: #506DED;
+}
+
+.social-media-icons a:nth-child(2) i {
+  color: #4099FF;
+}
+
+.social-media-icons a:nth-child(3) i {
+  color: #b31217;
+}
+
+.social-media-icons a:nth-child(4) i {
+  color: #FF6600;
+}
+.social-media-icons a:nth-child(5) i {
+  color: #E942D5;
+}
+.social-media-icons a:nth-child(6) i {
+  color: #1638CD;
+}
+.social-media-icons a i:hover{
+  color: black;
+}
+/*================================
+  Navbar Style Start
+================================*/
+.navbar {
+  width: 100%;
+  padding-inline: 20px;
+  background-color:transparent !important;
+  opacity: 0.9 !important;
+  position: relative !important;
+  z-index: inherit;
+  overflow: hidden !important;
+}
+.container-fluid {
+  padding-inline: 100px;
+  /* background: #fff; */
+ 
+}
+.container-fluid a button {
+ 
+  font-size: 30px;
+  background: #fff !important;
+  font-weight: bold;
+  border: none !important;
+}
+.container-fluid button {
+  border: none;
+  /* display: none; */
+
+}
+.navbar .navbar-nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 100%;
+  
+} 
+.navbar .navbar-nav .nav-item,
+.navbar .navbar-nav .nav-item .nav-link {
+  height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.navbar .navbar-nav .nav-item .nav-link{
+  text-decoration: none;
+    font-size: 1.1rem;
+    color: #f9f7fc;
+    font-weight: 500;
+   
+}
+.navbar .navbar-nav .nav-item .nav-link::before {
+  content: "";
+    width: 0;
+    height: 5px;
+    background-color: #DECC0F !important;
+    position: absolute;
+    bottom: 0;
+    left: 3;
+    transition: 200ms;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover::before {
+  width: 80%;
+  transform: rotate3d(30deg 0.2s);
+}
+.nav-link:hover {
+background: none !important;
+}
+.dropdown-menu{
+  z-index: -1000 !important;
+  
+  
+  
+}
+
+/* proof recent investors  */
+h2{
+  text-align: center;
+}
+.recent-investments{
+  display: -webkit-flex;
+display: flex;
+-webkit-flex-wrap: wrap;
+flex-wrap: nowrap;
+ color: white;
+text-align: center;
+}
+@media screen and (max-width: 500px) {
+.recent-investments{
+  display: -webkit-flex;
+display: flex;
+-webkit-flex-wrap: wrap;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+}
+table, th, td {
+  
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 5px;
+  border-right: none;
+border-left: none;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+table {
+border-collapse: collapse;
+margin: 2px;
+}
+table tr,table td{
+  border: 1px solid #000;
+
+}
+.recent-investments-caption{
+background-color: #431f07;
+color: white;
+font-size: 14pt;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+height: 40px;
+line-height: 35px;
+border-radius: 5px;
+margin: 2px;
+}
+.recent-investments-caption2{
+background-color: #fd961a;
+color: white;
+font-size: 14pt;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+height: 40px;
+line-height: 35px;
+border-radius: 5px;
+margin: 2px;
+}
+
+/* table  */
+
+table {
+  border: 2px solid #000;
+  gap: 4px;
+  color: #000;
+  background-color: #f0e8e1 !important;
+  height: 33vh;
+  
+}
+table th {
+  border: 2px solid #000;
+  background: hsl(67, 86%, 28%);
+  background-color: opacity(1.3);
+  font-weight: bold;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+/* .navbar {
+  padding: 0;
+  z-index: 99;
+  background: #fff;
+} */
+
+/* .navbar .container {
+  display: block;
+} */
+
+/* .navbar .navbar-brand {
+  padding: 2em 1em 3em;
+  margin-right: 0;
+  border-radius: 2em;
+  background-color: var(--c_indigo);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  filter: var(--filter_dropShadow);
+  box-shadow: var(--box_shadow);
+  font-size: inherit;
+  display: block;
+}
+
+.navbar .navbar-brand:hover {
+  background-color: var(--c_salmon);
+}
+
+.navbar .navbar-brand img {
+  max-width: 10em;
+}
+
+.navbar .navbar-nav {
+  background-color: var(--c_indigo);
+  border-radius: 2em;
+  filter: var(--filter_dropShadow);
+  box-shadow: var(--box_shadow);
+  padding: 0 1em;
+  min-height: 6em;
+}
+
+.navbar .navbar-nav .nav-item {
+  padding: 1.5em 1em;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  padding: 0;
+  font-size: 1.6em;
+  font-weight: 500;
+  color: var(--c_white);
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: var(--c_salmon);
+}
+
+.navbar .form-check-input~label {
+  background-color: var(--c_indigo);
+  border-radius: 2em;
+  filter: var(--filter_dropShadow);
+  box-shadow: var(--box_shadow);
+  padding: 0 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: 6em;
+  width: 7em;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .form-check-input~label .line {
+  width: 25px;
+  height: 2px;
+  background-color: var(--c_white);
+  display: block;
+  margin: 2.5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* .navbar .form-check-input ~ label .line:last-child {
+  margin-bottom: 0;
+} */
+/* .navbar .form-check-input:checked~label { */
+  /* animation: smallbig 0.6s forwards; */
+/* }
+
+@keyframes smallbig {
+
+  0%,
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+  } 
+} */
+/* 
+.navbar .form-check-input:checked~label .line:nth-child(1),
+.navbar .form-check-input:checked~label .line:nth-child(2),
+.navbar .form-check-input:checked~label .line:nth-child(3) {
+  -webkit-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.navbar .form-check-input:checked~label .line:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar .form-check-input:checked~label .line:nth-child(1) {
+  -webkit-transform: translateY(7px) rotate(45deg);
+  -ms-transform: translateY(7px) rotate(45deg);
+  -o-transform: translateY(7px) rotate(45deg);
+  transform: translateY(7px) rotate(45deg);
+}
+
+.navbar .form-check-input:checked~label .line:nth-child(3) {
+  -webkit-transform: translateY(-7px) rotate(-45deg);
+  -ms-transform: translateY(-7px) rotate(-45deg);
+  -o-transform: translateY(-7px) rotate(-45deg);
+  transform: translateY(-7px) rotate(-45deg);
+}
+ */
+
+
+/*================================
+  Navbar Style End
+================================*/
